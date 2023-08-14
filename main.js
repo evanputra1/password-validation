@@ -53,7 +53,6 @@ passwordInput.addEventListener("keyup", (e) => {
 });
 
 eyeIcon.addEventListener("click", () => {
-    // usernameInput.type = usernameInput.type === "username" ? "text" : "username";
     passwordInput.type = passwordInput.type === "password" ? "text" : "password";
     eyeIcon.className = `fa-solid fa-eye${passwordInput.type === "password" ? "" : "-slash"}`;
 });
