@@ -4,18 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Validation</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Container Start -->
   <div class="container">
+    <!-- Username Start -->
+    <div class="username">
+      <input type="text" placeholder="Ketik Username">
+    </div>
+    <div class="username-content">
+      <p>Username must contains</p>
+      <ul class="require-list">
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>At least 8 characters length</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>At least 1 number</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>At least 1 lowercase letter</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle"></i>
+          <span>At least 1 uppercase letter</span>
+        </li>
+      </ul>
+    </div>
+    <!-- Username End -->
+    <!-- Password Start -->
     <div class="password">
-      <input type="password" placeholder="Create Password">
+      <input type="password" placeholder="Ketik Password">
       <i class="fa-solid fa-eye"></i>
     </div>
-    <div class="content">
+    <div class="password-content">
       <p>Password must contains</p>
       <ul class="require-list">
         <li>
@@ -40,11 +68,15 @@
         </li>
       </ul>
     </div>
+    <!-- Password End -->
+    <!-- Copyright Start -->
     <div class="copyright">
       <span><i class="fa-regular fa-copyright"></i>2023 - Evan Ananda Putra</span>
     </div>
+    <!-- Copyright End -->
   </div>
-    <!-- Javascript -->
-    <script src="main.js"></script>
+  <!-- Container End -->
+  <!-- Javascript -->
+  <script src="main.js"></script>
 </body>
 </html>
